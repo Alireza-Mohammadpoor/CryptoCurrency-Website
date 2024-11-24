@@ -1,0 +1,20 @@
+/* home.module.css */
+.homeWrapper {
+	display: flex;
+	flex-direction: column; /* Stack children vertically */
+	align-items: center; /* Center children horizontally */
+	padding: 20px; /* Padding for the home wrapper */
+ }
+ 
+ /* Responsive adjustments */
+ @media (max-width: 768px) {
+	.homeWrapper {
+	  padding: 15px; /* Adjust padding for medium screens */
+	}
+ }
+ 
+ @media (max-width: 480px) {
+	.homeWrapper {
+	  padding: 10px; /* Further adjust padding for small screens */
+	}
+ }

@@ -3,25 +3,42 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  /* --background: black */
+  --background: linear-gradient(#0b004e, #1d152f, #002834);
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    /* --background: black */
+    --background:linear-gradient(#0b004e, #1d152f, #002834);
     --foreground: #ededed;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+   /* background: black; Correct gradient direction */
+   background: linear-gradient(to bottom, #0b004e, #1d152f, #002834); 
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   background-attachment: fixed; /* Ensures the background doesn't shift with scrolling */
+   background-repeat: no-repeat; /* Ensures no repetition of the gradient */
+   min-height: 100vh; /* Full viewport height */
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+ }
+
+ /* * {
+	outline: 1px solid red;
+ }
+  */
+ 
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+

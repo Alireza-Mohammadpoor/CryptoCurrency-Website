@@ -1,0 +1,126 @@
+{
+	"courses": [
+		{
+			"imagesrc": "/photos/courses/33.png",
+			"title": "Crypto Wallets and Storage",
+			"status": "on sale",
+			"price": "89",
+			"description": "Explore secure wallet options and best practices for safely storing cryptocurrencies.Lorem ipsum dolor sit amet consectetur adipisicing",
+			"supply": "3,750,000"
+		 },
+		 {
+			"imagesrc": "/photos/courses/44.png",
+			"title": "ICO and Token Launches",
+			"status": "on sale",
+			"price": "139",
+			"description": "Learn about initial coin offerings (ICOs) and token launches, from concept to execution.Lorem ipsum dolor sit amet consectetur adipisicing",
+			"supply": "6,200,000"
+		 },
+		 {
+			"imagesrc": "/photos/courses/55.png",
+			"title": "Exploring Crypto Exchanges",
+			"status": "sold out",
+			"price": "99",
+			"description": "Get a thorough understanding of crypto exchanges and how to navigate them securely.Lorem ipsum dolor sit amet consectetur adipisicing",
+			"supply": "5,300,000"
+		 },
+	  {
+		 "imagesrc": "/photos/courses/1.png",
+		 "title": "Introduction to Crypto Coins",
+		 "status": "on sale",
+		 "price": "99",
+		 "description": "Learn the basics of cryptocurrency, including how it works and why it's revolutionizing finance.Lorem ipsum dolor sit amet ",
+		 "supply": "3,988,500"
+	  },
+	  {
+		 "imagesrc": "/photos/courses/2.png",
+		 "title": "Crypto Trading Fundamentals",
+		 "status": "sold out",
+		 "price": "149",
+		 "description": "Master the essentials of trading crypto coins with this beginner-friendly course.Lorem ipsum dolor sit amet lorem lorem ",
+		 "supply": "5,000,000"
+	  },
+	  {
+		 "imagesrc": "/photos/courses/3.png",
+		 "title": "Advanced Crypto Strategies",
+		 "status": "on sale",
+		 "price": "299",
+		 "description": "Explore advanced strategies for trading, investing, and managing crypto assets.Lorem ipsum dolor sit amet consectetur adipisicing",
+		 "supply": "9,838,847"
+	  },
+	  {
+		 "imagesrc": "/photos/courses/4.png",
+		 "title": "DeFi and Yield Farming",
+		 "status": "on sale",
+		 "price": "199",
+		 "description": "Dive into decentralized finance and learn how to leverage yield farming techniques.Lorem ipsum dolor sit amet consectetur adipisicing ",
+		 "supply": "4,520,000"
+	  },
+	  {
+		 "imagesrc": "/photos/courses/5.png",
+		 "title": "Crypto Security Essentials",
+		 "status": "sold out",
+		 "price": "129",
+		 "description": "Protect your assets with this course on essential crypto security practices.Lorem ipsum dolor sit amet consectetur adipisicing",
+		 "supply": "3,950,000"
+	  },
+	  {
+		 "imagesrc": "/photos/courses/6.png",
+		 "title": "NFT Basics and Beyond",
+		 "status": "on sale",
+		 "price": "99",
+		 "description": "Understand the world of NFTs, from their creation to their role in digital ownership.Lorem ipsum dolor sit amet consectetur adipisicing",
+		 "supply": "1,000,000"
+	  },
+	  {
+		 "imagesrc": "/photos/courses/7.png",
+		 "title": "Blockchain for Beginners",
+		 "status": "on sale",
+		 "price": "89",
+		 "description": "Discover blockchain technology's basics and its applications beyond crypto.Lorem ipsum dolor sit amet consectetur adipisicing",
+		 "supply": "8,500,000"
+	  },
+	  {
+		 "imagesrc": "/photos/courses/8.png",
+		 "title": "Crypto Mining Explained",
+		 "status": "sold out",
+		 "price": "149",
+		 "description": "Learn the ins and outs of crypto mining and how to get started with minimal investment.Lorem ipsum dolor sit amet consectetur adipisicing",
+		 "supply": "6,150,000"
+	  },
+	  {
+		 "imagesrc": "/photos/courses/9.png",
+		 "title": "Understanding Smart Contracts",
+		 "status": "on sale",
+		 "price": "109",
+		 "description": "Get familiar with smart contracts, how they work, and their impact on various industries.Lorem ipsum dolor sit amet consectetur adipisicing",
+		 "supply": "2,300,000"
+	  },
+	  {
+		 "imagesrc": "/photos/courses/10.png",
+		 "title": "Crypto Coin Economics",
+		 "status": "on sale",
+		 "price": "119",
+		 "description": "Study the economics behind different crypto coins and what affects their value.Lorem ipsum dolor sit amet consectetur adipisicing",
+		 "supply": "9,988,000"
+	  },
+	  {
+		 "imagesrc": "/photos/courses/11.png",
+		 "title": "Stablecoins and Their Impact",
+		 "status": "on sale",
+		 "price": "99",
+		 "description": "Learn about stablecoins and their role in providing stability within the crypto market.Lorem ipsum dolor sit amet consectetur adipisicing",
+		 "supply": "7,500,000"
+	  },
+	  {
+		 "imagesrc": "/photos/courses/22.png",
+		 "title": "Crypto Taxation Basics",
+		 "status": "sold out",
+		 "price": "79",
+		 "description": "Understand the essentials of crypto taxation and how to manage tax obligationsLorem ipsum dolor sit amet consectetur adipisicing.",
+		 "supply": "4,800,000"
+	  }
+	  
+	]
+ }
+ 

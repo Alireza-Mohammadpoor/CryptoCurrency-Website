@@ -1,0 +1,31 @@
+/* body.module.css */
+.bodyWrapper {
+	max-width: 1200px; /* Keeps content centered on larger screens */
+	margin: 0 auto; /* Center the body content */
+	padding: 0 20px; /* Padding for smaller screens */
+}
+
+.section {
+	margin-bottom: 40px; /* Adds space between sections */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.bodyWrapper {
+		 padding: 0 15px; /* Slightly smaller padding on medium screens */
+	}
+
+	.section {
+		 margin-bottom: 30px; /* Less space between sections on smaller screens */
+	}
+}
+
+@media (max-width: 480px) {
+	.bodyWrapper {
+		 padding: 0 10px; /* Even smaller padding on very small screens */
+	}
+
+	.section {
+		 margin-bottom: 20px; /* Reduced space between sections for small screens */
+	}
+}

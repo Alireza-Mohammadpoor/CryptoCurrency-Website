@@ -1,0 +1,227 @@
+/* Base CSS for main components */
+.featuresContainer {
+   /* background-color: black; */
+   /* min-height: 100vh; Adjusted to allow content to resize */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* margin-top: -20; */
+   flex-wrap: wrap; /* Allows wrapping on smaller screens */
+   padding: 20px; /* Added padding for smaller screens */
+	/* filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px); */
+	margin-bottom: 200px;
+	/* z-index: -1; */
+	/* margin-top: 100px; */
+	/* background-image: url('/photos/pexels-rccbtn-12063230.png'); */
+}
+
+.featuresBackground {
+   position: absolute;
+	/* background-image: url('/photos/pexels-rccbtn-12063230.png'); */
+	background-size: cover;
+   background-position: center;
+	background-repeat: no-repeat;
+	height: 50vh;
+   top: 0;
+   left: 0;
+   width: 100%;
+	margin-top: 110px;
+   /* height: auto; */
+   /* background: rgba(255, 255, 255, 0.4); Add semi-transparent background */
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+   z-index: 0;
+	/* margin-top: 100px; */
+	/* margin-bottom: 3000px; */
+}
+
+
+.featuresContent {
+   text-align: center;
+   color: white;
+   padding: 10px; /* Added padding for better spacing */
+}
+
+
+
+
+.photoflex {
+   display: flex;
+   gap: 50px;
+   flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+   justify-content: center; /* Center-align content on smaller screens */
+}
+
+.mainh1 {
+   font-size: 3.9rem;
+   font-weight: 800;
+   font-family: 'Outfit', sans-serif;
+	background: linear-gradient(to right, hsl(216, 72%, 47%), whitesmoke);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.sh1 {
+   font-size: 3.9rem;
+   font-weight: 800;
+   font-family: 'Outfit', sans-serif;
+	background: linear-gradient(to right, hsl(216, 72%, 47%), whitesmoke);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.p {
+   font-size: 1.2rem;
+   font-weight: 800;
+   font-family: 'Outfit', sans-serif;
+	color: hsl(0, 0%, 70%);
+}
+
+.iconss {
+   display: flex;
+   gap: 10px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   margin-top: 15px;
+	color: hsl(0, 0%, 70%);
+}
+
+.all {
+   margin-top: 85px;
+   margin-left: 100px;
+   flex: 1;
+   min-width: 300px; /* Ensures a minimum width for smaller screens */
+}
+
+.emailinp {
+   color: hsl(0, 0%, 55%);
+   font-weight: 700;
+   width: 100%; /* Full width on smaller screens */
+   font-size: 1.1rem;
+}
+
+.emailh {
+   font-weight: 900;
+   width: 100%;
+   font-size: 1.6rem;
+}
+
+.inputs {
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.inp {
+   border-radius: 4px;
+   color: hsl(0, 0%, 100%);
+   width: 100%; /* Responsive width */
+   background-color: rgb(50, 53, 70);
+   text-decoration: none;
+   outline: none;
+   border: none;
+   height: 35px;
+   font-size: 0.9rem;
+   font-family: arvo;
+   margin-top: 20px;
+}
+
+.btn {
+   background-color: hsl(231, 72%, 47%);
+   color: white;
+   width: 100%; /* Responsive width */
+   height: 35px;
+   border-radius: 4px;
+   text-decoration: none;
+   outline: none;
+   border: none;
+   font-size: 1rem;
+   font-family: arvo;
+   /* margin-top: 20px; */
+   font-weight: 900;
+}
+
+.img{
+	width: 344px ;
+	height: auto;
+	margin-right: 200px;
+	margin-left: 35px;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+   .mainh1, .sh1 {
+      font-size: 2.5rem; /* Smaller font size */
+   }
+
+   .p {
+      font-size: 1rem; /* Reduced font size */
+   }
+
+   .all {
+      margin-left: 30px;
+   }
+
+   .inputs {
+      flex-direction: column; /* Stack inputs vertically */
+      gap: 10px;
+   }
+
+   .emailh {
+      font-size: 1.5rem;
+   }
+
+	.photoflex{
+		margin-left: 0;
+		margin-right: 20px;
+	}
+
+	.img{
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		margin-left: 0;
+		margin-right: 0;
+		width: 300px;
+	}
+
+	.featuresBackground{
+		height: auto;
+	}
+}
+
+/* Small screens (mobile) */
+@media (max-width: 480px) {
+   .featuresContent h1 {
+      font-size: 1.8rem; /* Further reduction for mobile */
+   }
+
+   .featuresBackground {
+      margin-bottom: 100px;
+   }
+
+   .mainh1, .sh1 {
+      font-size: 1.2rem; /* Smaller header */
+   }
+
+   .p {
+      font-size: 0.9rem;
+   }
+
+   .emailh {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+   }
+
+   .btn {
+      font-size: 1rem;
+      height: 40px;
+   }
+
+   .iconss {
+      gap: 5px;
+      flex-wrap: wrap; /* Allow icons to wrap */
+   }
+}

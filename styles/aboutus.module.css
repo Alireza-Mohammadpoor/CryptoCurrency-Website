@@ -1,0 +1,105 @@
+.allof {
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px;
+ }
+ 
+ .mine {
+	display: flex;
+	flex-wrap: wrap; /* Ensure wrapping for smaller screens */
+	gap: 40px; 
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 50px;
+ }
+ 
+ .videocontainer {
+	flex: 1; /* Take up equal space */
+	max-width: 400px; /* Limit video width */
+	position: relative; /* For button positioning */
+ }
+ 
+ .videoplayer {
+	width: 400px; /* Fully responsive */
+	height: 400px; /* Maintain aspect ratio */
+	object-fit: cover;
+	border-radius: 10px;
+	display: block;
+ }
+ 
+ .playButton {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white; /* Icon color for better visibility */
+	font-size: 4rem; /* Adjust size for better scaling */
+	transition: transform 0.2s ease-in-out;
+	/* margin-right: 30px; */
+ }
+ 
+ .playButton:hover {
+	transform: translate(-50%, -50%) scale(1.1); /* Slight zoom on hover */
+ }
+ 
+ 
+ .textcontainer {
+	flex: 1; /* Take up equal space */
+	max-width: 500px; /* Match video container width */
+	text-align: left;
+	margin-top: 10px;
+ }
+ 
+ .h1 {
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+	font-family: 'Outfit', sans-serif;
+	font-weight: 600;
+	color: hsl(0, 0%, 91%);
+ }
+ 
+ .pp {
+	font-family: 'Vesper Libre', sans-serif;
+	margin-bottom: 15px;
+	font-weight: 700;
+	font-size: 0.9rem;
+	color: hsl(0, 0%, 80%);
+	max-width: 100%;
+ }
+ 
+ @media (max-width: 768px) {
+	.mine {
+	  flex-direction: column; /* Stack items vertically */
+	  align-items: center; /* Center-align content */
+	}
+ 
+	.videocontainer {
+	  max-width: 320px;
+	}
+ 
+	.videoplayer {
+	  max-width: 320px;
+	}
+ 
+	.textcontainer {
+	  max-width: 90%; /* Adjust for mobile screens */
+	  margin-top: 20px;
+	}
+ 
+	.h1 {
+	  font-size: 1.2rem; /* Reduce size for smaller screens */
+	  text-align: center;
+	}
+ 
+	.pp {
+	  font-size: 0.8rem; /* Adjust font size */
+	  text-align: center;
+	}
+ }
+ 

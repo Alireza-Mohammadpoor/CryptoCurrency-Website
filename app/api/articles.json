@@ -1,0 +1,161 @@
+{
+	"articles": [
+	  {
+		 "id": 1,
+		 "title": "Bitcoin Surges to New Heights",
+		 "description": "Bitcoin reaches an all-time high amid growing institutional adoption, bringing excitement to the market. Experts speculate on further gains, fueled by increased corporate interest. Investors are optimistic about what this means for the future of cryptocurrency and global finance.",
+		 "author": "John Doe",
+		 "publishDate": "11,1,2024",
+		 "publishTime": "18:15",
+		 "image": "/photos/articles/182M-Liquidated-as-Bitcoin-Battles-61K—Whats-Next-for-BTC.webp",
+		 "relatedCoin": {
+			"name": "Bitcoin",
+			"image": "/photos/coin-images/bitcoin.webp"
+		 }
+	  },
+	  {
+		 "id": 2,
+		 "title": "Ethereum's Upgrade: What to Expect",
+		 "description": "Ethereum’s latest upgrade aims to enhance scalability and reduce fees, addressing two of the platform's biggest challenges. This update marks a critical point in Ethereum's development and could attract new developers and users alike to the network.",
+		 "author": "Jane Smith",
+		 "publishDate": "today",
+		 "publishTime": "10:30",
+		 "image": "/photos/articles/173054227017305422588907013-image2.png",
+		 "relatedCoin": {
+			"name": "Ethereum",
+			"image": "/photos/coin-images/ethereum.webp"
+		 }
+	  },
+	  {
+		 "id": 3,
+		 "title": "Ripple's Legal Battle: A Turning Point",
+		 "description": "Ripple continues to face legal challenges in the U.S., but the stakes go beyond the company. The outcome could redefine cryptocurrency regulations, impacting the entire industry’s future in the United States and abroad.",
+		 "author": "Alice Johnson",
+		 "publishDate": "yesterday",
+		 "publishTime": "14:45",
+		 "image": "/photos/articles/Are-We-in-Crypto-Bear-Market-or-Is-Recovery-on-Horizon-Michael-Van-De-Poppe-Weighs-In.webp",
+		 "relatedCoin": {
+			"name": "Ripple",
+			"image": "https://example.com/images/ripple.png"
+		 }
+	  },
+	  {
+		 "id": 4,
+		 "title": "Cardano's Smart Contracts: A Game Changer",
+		 "description": "Cardano's introduction of smart contracts is set to change the landscape for decentralized applications, bringing more functionality to the blockchain. This step promises to position Cardano as a leading platform for DApps and DeFi innovation.",
+		 "author": "Bob Lee",
+		 "publishDate": "11,1,2024",
+		 "publishTime": "12:00",
+		 "image": "/photos/articles/Bitcoin-Hayes.png",
+		 "relatedCoin": {
+			"name": "Cardano",
+			"image": "https://example.com/images/cardano.png"
+		 }
+	  },
+	  {
+		 "id": 5,
+		 "title": "Solana's Speed: The Future of DeFi",
+		 "description": "Solana continues to impress with its remarkable speed and high transaction throughput. As decentralized finance grows, Solana's performance makes it a top choice for developers seeking reliable, fast blockchain solutions.",
+		 "author": "Michael Brown",
+		 "publishDate": "today",
+		 "publishTime": "09:15",
+		 "image": "/photos/articles/crypto-news-cybro.io-option09.webp",
+		 "relatedCoin": {
+			"name": "Solana",
+			"image": "https://example.com/images/solana.png"
+		 }
+	  },
+	  {
+		 "id": 6,
+		 "title": "Polkadot's Interoperability Solutions",
+		 "description": "Polkadot aims to bridge multiple blockchains, enhancing interoperability across the ecosystem. This innovation is designed to provide a more interconnected blockchain environment, making it easier for diverse networks to work together.",
+		 "author": "Lisa White",
+		 "publishDate": "11,1,2024",
+		 "publishTime": "16:00",
+		 "image": "/photos/articles/crypto-news-DOGEN-option06.webp",
+		 "relatedCoin": {
+			"name": "Polkadot",
+			"image": "https://example.com/images/polkadot.png"
+		 }
+	  },
+	  {
+		 "id": 7,
+		 "title": "Dogecoin: From Meme to Mainstream",
+		 "description": "Dogecoin has evolved from a mere internet meme to a widely recognized digital currency, with an increasing number of businesses accepting it as payment. Its popularity reflects a growing trend of community-driven cryptocurrencies in mainstream finance.",
+		 "author": "Tom Harris",
+		 "publishDate": "yesterday",
+		 "publishTime": "11:20",
+		 "image": "/photos/articles/crypto-news-Lunex-option02.webp",
+		 "relatedCoin": {
+			"name": "Dogecoin",
+			"image": "https://example.com/images/dogecoin.png"
+		 }
+	  },
+	  {
+		 "id": 8,
+		 "title": "Litecoin: A Steady Performer",
+		 "description": "Litecoin remains a trusted choice for transactions due to its low fees and fast processing times. Its steady performance has solidified its place as one of the most reliable cryptocurrencies in the market.",
+		 "author": "Anna Taylor",
+		 "publishDate": "today",
+		 "publishTime": "15:30",
+		 "image": "/photos/articles/crypto-news-Trump-criticizing-crypto-while-holding-an-NFT-inside-Trump-Tower04.webp",
+		 "relatedCoin": {
+			"name": "Litecoin",
+			"image": "https://example.com/images/litecoin.png"
+		 }
+	  },
+	  {
+		 "id": 9,
+		 "title": "Chainlink's Role in DeFi",
+		 "description": "Chainlink provides essential data feeds for DeFi projects, ensuring accuracy and security for decentralized applications. Its integration has become vital to the DeFi ecosystem, powering a range of applications.",
+		 "author": "Chris Green",
+		 "publishDate": "11,1,2024",
+		 "publishTime": "13:45",
+		 "image": "/photos/articles/crypto-news-xyzverse-option01.webp",
+		 "relatedCoin": {
+			"name": "Chainlink",
+			"image": "https://example.com/images/chainlink.png"
+		 }
+	  },
+	  {
+		 "id": 10,
+		 "title": "Avalanche: Scaling Solutions for Blockchain",
+		 "description": "Avalanche delivers a high-speed blockchain platform that addresses scalability challenges for decentralized applications. Its solutions promise faster transaction speeds, making it an attractive option for DApps and enterprise adoption.",
+		 "author": "Sara Wilson",
+		 "publishDate": "yesterday",
+		 "publishTime": "17:00",
+		 "image": "/photos/articles/dogecoin-2-300x169.png",
+		 "relatedCoin": {
+			"name": "Avalanche",
+			"image": "https://example.com/images/avalanche.png"
+		 }
+	  },
+	  {
+		 "id": 11,
+		 "title": "Binance Coin: The Exchange Token",
+		 "description": "As the native token of Binance, Binance Coin (BNB) plays a central role in the platform’s ecosystem. Its use in trading and transactions continues to grow as more users join the exchange.",
+		 "author": "David Kim",
+		 "publishDate": "11,1,2024",
+		 "publishTime": "09:00",
+		 "image": "/photos/articles/eth-113.webp",
+		 "relatedCoin": {
+			"name": "Binance Coin",
+			"image": "https://example.com/images/binance-coin.png"
+		 }
+	  },
+	  {
+		 "id": 12,
+		 "title": "Tron: The Next Big Thing?",
+		 "description": "Tron continues to draw attention with its innovative blockchain solutions and active community. As the platform evolves, it aims to attract more developers and establish itself as a leader in decentralized content creation.",
+		 "author": "Laura Lee",
+		 "publishDate": "today",
+		 "publishTime": "19:00",
+		 "image": "/photos/articles/XRP-Ledger-Sees-Growing-Use-Beyond-Payments-Data-Shows-380x214.jpg",
+		 "relatedCoin": {
+			"name": "Tron",
+			"image": "https://example.com/images/tron.png"
+		 }
+	  }
+	]
+ }
+ 

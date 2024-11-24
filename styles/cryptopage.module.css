@@ -1,0 +1,43 @@
+.container {
+	padding: 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.statsContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Center-aligns content within the container */
+	justify-content: center;
+	width: 100%;
+	max-width: 600px; /* Optional: limits max width for better appearance */
+	text-align: left; /* Text inside stats remains left-aligned */
+}
+
+.stat {
+	font-size: medium;
+	padding: 10px 0;
+	font-weight: 100;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #5f5d5f;
+}
+
+.chart {
+	height: 300px;
+	width: 100%;
+	max-width: 620px; /* Optional: limits max width */
+	background-color: white;
+	border-radius: 20px;
+	margin-top: 20px;
+}
+
+.title {
+	font-family: 'Outfit', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 800;
+}

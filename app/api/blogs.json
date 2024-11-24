@@ -1,0 +1,89 @@
+{
+	"articles": [
+	  {
+		 "id": 1,
+		 "person": {
+			"name": "John Doe",
+			"country": "USA",
+			"city": "New York",
+			"firstName": "John",
+			"lastName": "Doe",
+			"image" : "/photos/users/WellingtonL.png"
+		 },
+		 "title": "The Rise of Cryptocurrency in the USA",
+		 "body": "Cryptocurrencies have seen a dramatic rise in popularity across the United States. Factors contributing to this include the growing adoption of digital payment systems, increased investment opportunities, and regulatory support. As the US economy integrates more blockchain technology, digital currencies are expected to play a significant role.",
+		 "date": "February 10, 2024"
+	  },
+	  {
+		 "id": 2,
+		 "person": {
+			"name": "Aisha Khan",
+			"country": "UAE",
+			"city": "Dubai",
+			"firstName": "Aisha",
+			"lastName": "Khan",
+			"image" : "/photos/users/AgiI_1.png"
+		 },
+		 "title": "Cryptocurrency Adoption in the UAE",
+		 "body": "The United Arab Emirates has emerged as a global hub for cryptocurrency and blockchain technology. With government support and an innovation-friendly environment, the UAE is attracting international blockchain companies and fostering a forward-looking financial ecosystem.the UAE is attracting international blockchain companies and fostering .",
+		 "date": "March 2, 2024"
+	  },
+	  {
+		 "id": 3,
+		 "person": {
+			"name": "Carlos Perez",
+			"country": "ESP",
+			"city": "Madrid",
+			"firstName": "Carlos",
+			"lastName": "Perez",
+			"image" : "/photos/users/TortorelliD_0.png"
+		 },
+		 "title": "Spain's Perspective on Digital Currencies",
+		 "body": "As Spain explores cryptocurrency, interest among younger generations is growing. The government is working on regulatory frameworks to support secure cryptocurrency transactions while ensuring consumer protection in this dynamic market.the UAE is attracting international blockchain companies and fostering a forward-looking financial ecosystem.",
+		 "date": "April 18, 2024"
+	  },
+	  {
+		 "id": 4,
+		 "person": {
+			"name": "Emma Brown",
+			"country": "UK",
+			"city": "London",
+			"firstName": "Emma",
+			"lastName": "Brown",
+			"image" : "/photos/users/PowersL.png"
+		 },
+		 "title": "The UK’s Crypto currency Journey",
+		 "body": "The United Kingdom is balancing innovation and regulation in the cryptocurrency space. With efforts to regulate crypto exchanges and encourage blockchain innovation, the UK aims to be a leader in digital financial technologies.the UAE is attracting international blockchain companies and fostering a forward-looking financial ecosystem.",
+		 "date": "May 5, 2024"
+	  },
+	  {
+		 "id": 5,
+		 "person": {
+			"name": "Rajesh Kumar",
+			"country": "IND",
+			"city": "Mumbai",
+			"firstName": "Rajesh",
+			"lastName": "Kumar",
+			"image" : "/photos/users/JoyceN.png"
+		 },
+		 "title": "India's Evolving Stance on Cryptocurrencies",
+		 "body": "India’s cryptocurrency market has seen rapid growth, though the government remains cautious. Regulatory discussions continue, focusing on balancing economic benefits and security concerns as millions of Indians invest in digital assets.the UAE is attracting international blockchain companies and fostering a forward-looking .",
+		 "date": "June 15, 2024"
+	  },
+	  {
+		 "id": 6,
+		 "person": {
+			"name": "Mina Chen",
+			"country": "CHN",
+			"city": "Beijing",
+			"firstName": "Mina",
+			"lastName": "Chen",
+			"image" : "/photos/users/HunterS.png"
+		 },
+		 "title": "China’s Approach to Digital Currencies",
+		 "body": "While China restricts cryptocurrencies, it is also pioneering its digital currency, the digital yuan. This move could reshape the global financial landscape, offering a state-backed alternative to traditional cryptocurrencies.the UAE is attracting international blockchain companies and fostering a forward-looking financial ecosystem.",
+		 "date": "July 25, 2024"
+	  }
+	]
+ }
+ 

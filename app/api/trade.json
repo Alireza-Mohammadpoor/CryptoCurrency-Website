@@ -1,0 +1,75 @@
+{
+	"courses": [
+	  {
+		 "title": "Bitcoin Basics",
+		 "description": "Learn the fundamentals of Bitcoin and how to trade effectively in the market.",
+		 "tradingDetails": "Covers trading strategies, market analysis, and wallet management.",
+		 "stars": 5.0,
+		 "imagesrc": "/photos/trading/pexels-anna-nekrashevich-6802042.jpg"
+	  },
+	  {
+		  "title": "Litecoin Masterclass",
+		  "description": "Master Litecoin trading with advanced techniques and real-world examples.",
+		  "tradingDetails": "Includes case studies and market forecasts.",
+		  "stars": 3.0,
+		  "imagesrc": "/photos/trading/pexels-dvaughnbell-2068664.jpg"
+		},
+		{
+			"title": "Ripple Trading Essentials",
+			"description": "Essential guide to trading Ripple, focusing on XRP market dynamics.",
+			"tradingDetails": "Learn about market trends and how to trade XRP effectively.",
+			"stars": 4.0,
+			"imagesrc": "/photos/trading/pexels-energepic-com-27411-159888.jpg"
+		},
+		{
+		 "title": "Cardano for Beginners",
+		 "description": "A beginner's guide to understanding Cardano and trading its tokens.",
+		 "tradingDetails": "Explains ADA's unique features and trading techniques.",
+		 "stars": 2.0,
+		 "imagesrc": "/photos/trading/pexels-martabranco-1263324.jpg"
+		},
+		{
+		  "title": "Ethereum Trading Strategies",
+		  "description": "Deep dive into Ethereum trading strategies and how to maximize your profits.",
+		  "tradingDetails": "Focuses on technical analysis and investment tips for Ethereum traders.",
+		  "stars": 4.5,
+		  "imagesrc": "/photos/trading/pexels-anna-nekrashevich-6802049.jpg"
+		},
+	  {
+		 "title": "Polkadot Investment Strategies",
+		 "description": "Investment strategies for Polkadot, including risk management techniques.",
+		 "tradingDetails": "Focuses on portfolio diversification and asset allocation.",
+		 "stars": 5.0,
+		 "imagesrc": "/photos/trading/pexels-nicolas-jaramillo-525710-1272541.jpg"
+	  },
+	  {
+		 "title": "Chainlink Trading Course",
+		 "description": "Learn how to trade Chainlink and understand its market potential.",
+		 "tradingDetails": "Covers trading patterns and market sentiment analysis.",
+		 "stars": 3.5,
+		 "imagesrc": "/photos/trading/pexels-pixabay-534216.jpg"
+	  },
+	  {
+		 "title": "Binance Coin Trading Guide",
+		 "description": "Comprehensive guide to trading Binance Coin (BNB) in the cryptocurrency market.",
+		 "tradingDetails": "Includes tips on using the Binance platform effectively.",
+		 "stars": 4.0,
+		 "imagesrc": "/photos/trading/pexels-weekendplayer-186461 (1).jpg"
+	  },
+	  {
+		 "title": "Solana Trading Techniques",
+		 "description": "Explore advanced trading techniques for Solana and its growing ecosystem.",
+		 "tradingDetails": "Focuses on volatility and price action strategies.",
+		 "stars": 3.0,
+		 "imagesrc": "/photos/trading/pexels-artempodrez-5716001 (1).jpg"
+	  },
+	  {
+		 "title": "Dogecoin Trading Fundamentals",
+		 "description": "Understand the fundamentals of trading Dogecoin and its community impact.",
+		 "tradingDetails": "Includes analysis of meme culture in trading decisions.",
+		 "stars": 1.5,
+		 "imagesrc": "/photos/trading/pexels-weekendplayer-187041.jpg"
+	  }
+	]
+ }
+ 

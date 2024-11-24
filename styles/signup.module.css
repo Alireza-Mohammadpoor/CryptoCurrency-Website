@@ -1,0 +1,103 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-image: url('/images/pexels-pixabay-221457.jpg');
+	background-size: cover; /* Ensures the image covers the whole container */
+	background-position: center; /* Centers the background image */
+	background-repeat: no-repeat; /* Prevents the background from repeating */
+	padding: 20px;
+	position: relative;
+	/* lighting-color: #fff; */
+}
+
+.form {
+	/* background-color: #fff; */
+	padding: 20px;
+	border-radius: 6px;
+	box-shadow: 0 4px 8px hsl(0, 0%, 30%);
+	max-width: 400px;
+	width: 100%;
+	text-align: center;
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	/* border-radius: 20px; */
+	/* box-shadow: 0 8px 32px rgba(0, 0, 0, 37); */
+}
+
+.inputField {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	/* border: 1px solid #ccc; */
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	background-color: hsl(0, 0%, 77%);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 31);
+}
+
+.inputField::placeholder {
+	color: white; /* Placeholder text color */
+	opacity: 0.8; /* Ensures full opacity for the placeholder text */
+}
+
+
+.submitButton {
+	width: 80px;
+	margin: 2rem 0 auto;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: #0070f3;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.submitButton:hover {
+	background-color: #005bb5;
+}
+
+.signUpLink {
+	margin: 20px 0;
+	cursor: pointer;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.backButton {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: #ebeef2;
+}
+
+.backButton:hover {
+	color: #005bb5;
+}
+
+
+
+.notification {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	/* background-color: #f297c4; Pink background */
+	color: #fff; /* White text */
+	padding: 15px;
+	/* border-radius: 8px; */
+	border: 1px solid white;
+	/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+	max-width: 300px;
+	z-index: 1000; /* Ensure it appears above other content */
+	/* opacity: 0.9; */
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border-radius: 20px;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 37);
+}

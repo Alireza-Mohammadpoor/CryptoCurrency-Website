@@ -1,0 +1,90 @@
+.container {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	gap: 30px;
+	margin-top: 70px;
+	flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+ }
+ 
+ .section {
+	border-radius: 8px;
+	transition: transform 0.3s ease;
+	text-align: center;
+	margin-bottom: 30px;
+	width: 28%; /* Default width for larger screens */
+ }
+ 
+ .section:hover {
+	transform: translateY(-5px);
+ }
+ 
+ .heading {
+	font-size: 1.1rem;
+	font-weight: 600;
+	font-family: 'Outfit', sans-serif;
+	margin-top: 20px;
+ }
+ 
+ .para {
+	font-family: 'Arvo';
+	font-size: 0.8rem;
+	font-weight: 500;
+	margin-top: 15px;
+	color: hsl(0, 0%, 87%);
+ }
+ 
+ .img {
+	display: block;
+	margin: 0 auto;
+	max-width: 240px;
+	height: 210px;
+	border-radius: 10px;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	border: 1px solid grey;
+ }
+ 
+ .img::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	transition: background 0.3s ease-in-out;
+	z-index: 1;
+ }
+ 
+ .img:hover::after {
+	background: rgba(0, 0, 0, 0.2);
+ }
+ 
+ .img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: relative;
+	z-index: 0;
+ }
+ 
+ /* Media query for responsiveness */
+ @media (max-width: 768px) {
+	.container {
+	  flex-direction: column; /* Stack sections vertically on smaller screens */
+	  gap: 20px; /* Reduce the gap between items */
+	}
+ 
+	.section {
+	  width: 100%; /* Make sections full width */
+	}
+ 
+	.img {
+	  max-width: 50%; /* Scale the image width to fit the section */
+	  height: auto; /* Adjust height to maintain aspect ratio */
+	}
+ }
+ 

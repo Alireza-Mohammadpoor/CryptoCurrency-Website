@@ -1,0 +1,128 @@
+.h1 {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 3.5rem;
+	font-weight: 800;
+	font-family: 'Outfit', sans-serif;
+	margin: 0;
+}
+
+.inps {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.inp {
+	margin-top: 30px;
+	background-color: white;
+	width: 90%; /* Adjust for better responsiveness */
+	max-width: 500px;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	margin-bottom: 40px;
+}
+
+.maininp {
+	flex: 1;
+	border-radius: 5px;
+	height: 40px;
+	padding: 0 10px;
+	border: 0px solid #ccc;
+	outline: none;
+	color: black;
+	font-size: 1rem;
+}
+
+.btn {
+	background-color: #7927ff;
+	color: white;
+	border: none;
+	padding: 8px 15px;
+	font-size: 14px;
+	cursor: pointer;
+	margin-left: 10px;
+	border-radius: 5px;
+	margin: 10px 10px;
+}
+
+.tableContainer {
+	padding: 20px;
+	background-color: inherit;
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+
+.centercontainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* height: 100vh; Adjust height based on your requirement */
+	/* background: #f0f0f0; Optional background for visibility */
+ }
+ 
+ .ma {
+	background-image: linear-gradient(to right, hsl(0, 0%, 65%), hsl(350, 100%, 69%));
+	color: hsl(212, 100%, 98%);
+	width: 450px;
+	height: 45px;
+	font-size: 1rem;
+	font-weight: 700;
+	font-family: 'Arvo', sans-serif;
+	text-align: center;
+	display: flex; /* Makes sure the text inside is centered */
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+ }
+ 
+
+@media (max-width: 1024px) {
+	.h1 {
+		 font-size: 3rem;
+	}
+	.inp {
+		 width: 100%;
+	}
+	.maininp {
+		 font-size: 0.95rem;
+	}
+	.btn {
+		 padding: 7px 12px;
+	}
+}
+
+@media (max-width: 768px) {
+	.h1 {
+		 font-size: 2.5rem;
+	}
+	.maininp {
+		 width: 100%;
+		 font-size: 0.9rem;
+	}
+	.btn {
+		 font-size: 0.8rem;
+		 padding: 5px 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	.h1 {
+		 font-size: 2rem;
+	}
+	.inp {
+		 width: 100%;
+		 flex-direction: column;
+	}
+	.maininp {
+		 width: 100%;
+		 margin-bottom: 10px;
+	}
+	.btn {
+		 display: none; /* Hide button to save space */
+	}
+}

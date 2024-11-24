@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Vesper+Libre:wght@400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Vesper+Libre:wght@400;500;700;900&display=swap');
+ /* Courses grid container */
+ .coursesContainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin-right: 10px;
+	margin-top: 45px;
+	z-index: 0;
+ }
+
+ .courseCard {
+	background: rgba(250, 250, 250, 0.1); 
+	/* background: linear-gradient(to right, hsl(216, 72%, 44%), hsl(0, 0%, 76%)); */
+	/* background: linear-gradient(112.5deg, hsl(281, 86%, 18%) 11.4%, hsl(318, 34%, 28%) 60.2%); */
+	backdrop-filter: blur(10px); /* Apply blur effect */
+	-webkit-backdrop-filter: blur(10px); /* For WebKit browsers */
+	color: white; /* Ensure text is visible */
+	width: 260px;
+	height: auto;
+	box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+	border-radius: 8px;
+	transition: transform 0.3s, background 0.3s ease, color 0.3s ease;
+	border: 1px solid rgba(255, 255, 255, 0.2); /* Slightly lighter border for better visibility */
+	position: relative; /* Required for containing child elements */
+	overflow: hidden; /* Keep the content inside */
+}
+
+ 
+ /* Image wrapper for positioning the status label */
+ .imageWrapper {
+	position: relative;
+	
+ }
+ 
+
+ .title{
+	font-family: 'arvo', sans-serif;
+	font-weight: 700;
+	margin-left: 5px;
+	margin-top: 0px;
+	font-size: 0.8rem;
+ }
+
+ .courseImage {
+	width: 260px;
+	height: 145px;
+	object-fit: cover;
+	border-radius: 7px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	/* margin-left: 5px; */
+	/* margin-top: 5px; */
+ }
+ 
+ /* Status label styling */
+ .statusLabel {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 3px 7px;
+	border-radius: 4px;
+	color: white;
+	font-weight: bold;
+	font-size: 0.7rem;
+	z-index: 1;
+	background-color: (28 103 245);
+ }
+ 
+ /* Conditional status styles */
+ .onSale {
+	background-color: #3861fb !important;
+}
+
+.soldOut {
+	background-color: #808a9d !important;
+}
+
+ 
+
+ .supply{
+	align-items: end;
+	text-align: end;
+	justify-content: end;
+	font-size: 0.7rem;
+ }
+
+ .price{
+	justify-content: left;
+	text-align: left;
+	align-items: start;
+	margin-left: 5px;
+	font-size: 0.7rem;
+	
+ }
+
+
+ .desc {
+	width: 230px;
+	font-family: 'Vesper Libre', sans-serif;
+	margin-left: 5px;
+	margin-top: 3px;
+}
+
+.bold{
+	background-color:hsl(219, 13%, 70%);
+	height: 15px;
+	width: 30px;
+	border-radius: 3px;
+	margin-left: 5px;
+	padding: 3px 4px;
+	border: 2px hsl(0, 0%, 68%) solid;
+	/* border: 2px hsl(219, 13%, 60%) solid; */
+	color: hsl(0, 0%, 28%);
+}
+
+
+@media (max-width: 768px) {
+
+	.coursesContainer{
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.explain{
+		width: 350px;
+		font-family: 'arvo';
+		font-weight: 600;
+	}
+}
+
+
+
+
+
+
+
+ 
+
+ 

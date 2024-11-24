@@ -1,0 +1,63 @@
+.dropdown {
+	position: relative;
+	width: 70px;
+	height: 30px;
+	font-size: x-small;
+ }
+ 
+ .selection {
+	background-color: inherit;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+	border: 1px solid white;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: smaller;
+ }
+ 
+ .arrow {
+	margin-left: 5px;
+ }
+ 
+ /* .options {
+	background-color: inherit;
+	position: absolute;
+	width: 100%;
+	border: 1px solid white;
+	border-radius: 3px;
+	border-style: none solid none none;
+	border-style: none none none solid;
+	color: white;
+	top: 100%;
+	left: 0;
+ } */
+ 
+
+
+ .options {
+	background: linear-gradient(#0b004e, #1d152f, #002834);
+	position: absolute;
+	width: 100%;
+	border-width: 1px ; /* No border on top/bottom, 1px on left/right */
+	border-style: solid; /* Ensure the border has a style (solid) */
+	border-color: white; /* Set the border color */
+	border-radius: 3px; /* Optionally, round the corners */
+	color: white;
+	top: 100%;
+	left: 0;
+ }
+ 
+
+
+ .options div {
+	padding: 10px;
+	cursor: pointer;
+ }
+ 
+ .options div:hover {
+	background-color: #2e1b40;
+ }
+ 

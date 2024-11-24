@@ -1,0 +1,87 @@
+.progress-circle {
+   position: relative;
+   width: 20vw;  /* Use viewport width for responsiveness */
+   height: 20vw; /* Use viewport width for responsiveness */
+   max-width: 100px; /* Maximum size */
+   max-height: 100px; /* Maximum size */
+   border-radius: 50%;
+   border: 10px solid transparent;
+   border-top-color: #007aff; /* Change to desired color */
+   animation: spin 2.5s linear infinite; /* Adjust animation duration */
+}
+
+@keyframes spin {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(360deg);
+   }
+}
+
+.custom-pagination {
+   display: flex;
+   justify-content: center;
+   margin-top: 3px; /* Adjust as needed */
+}
+
+.pagination-button {
+   background-color: transparent; /* Set button color */
+   border: 2px solid #007aff; /* Set border color */
+   border-radius: 50%;
+   padding: 10px;
+   margin: 0 5px; /* Added margin for spacing between buttons */
+   cursor: pointer;
+   transition: background-color 0.3s, transform 0.3s;
+}
+
+.pagination-button:hover {
+   background-color: hsl(211, 100%, 60%); /* Change color on hover */
+   color: white; /* Change text color on hover */
+   transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.btn {
+   background-color: white; /* Set the button's background color to white */
+   color:black; /* Inherit text color from parent */
+   border-radius: 30px; /* Match the border radius of the select */
+   padding: 10px; /* Add padding for the button */
+   cursor: pointer; /* Change cursor to pointer on hover */
+   font-size: x-small;
+   width: auto; /* Allow width to adjust automatically */
+   min-width: 60px; /* Minimum width for smaller screens */
+   margin-top: 20px;
+}
+
+.ali {
+   color: red;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .progress-circle {
+        width: 30vw; /* Increase size on smaller screens */
+        height: 30vw; 
+    }
+
+    .pagination-button {
+        padding: 8px; /* Reduce padding for smaller screens */
+        margin: 0 3px; /* Adjust margin for spacing */
+    }
+
+    .btn {
+        font-size: small; /* Slightly increase font size on smaller screens */
+        padding: 12px; /* Adjust padding for better touch targets */
+    }
+
+    .image {
+        width: 200px; /* Make image responsive to parent container */
+        height: 100px; /* Maintain aspect ratio */
+    }
+
+	 .all{
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	 }
+}

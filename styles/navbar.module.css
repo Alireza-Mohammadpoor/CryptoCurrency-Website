@@ -1,0 +1,239 @@
+.logo {
+   position: absolute; /* To position it in the top left corner */
+   width: 250px; /* Adjust the size of the logo */
+   filter: brightness(0) invert(1); 
+   margin-top: 10px;
+ }
+ .navcenter {
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   display: flex;
+   gap: 25px;
+   transition: 0.8s; /* Add transition for the entire navcenter if needed */
+}
+
+.navmember {
+   font-size: 0.9rem; /* Font size for the nav members */
+   position: relative; /* Required for absolute positioning of the pseudo-element */
+   padding: 5px 0; /* Space for the border */
+   cursor: pointer; /* Pointer cursor on hover */
+   overflow: hidden; /* Prevent overflow from pseudo-element */
+	font-weight: 600;
+}
+
+.navmember::before {
+   content: ''; /* Create an empty pseudo-element */
+   position: absolute; /* Position it absolutely within the parent */
+   left: 0; /* Start from the left */
+   bottom: 0; /* Align with the bottom of the text */
+   width: 100%; /* Full width of the element */
+   height: 1px; /* Height of the underline */
+   background-color: white; /* Color of the underline */
+   transform: scaleX(0); /* Start with zero width */
+   transform-origin: left; /* Start the scale transformation from the left */
+   transition: transform 0.7s ease; /* Transition for scaling */
+}
+
+.navmember:hover::before {
+   transform: scaleX(1); /* Scale to full width on hover */
+}
+
+.navmember:hover {
+   border-bottom: 1px solid white; /* Add border on hover */
+}
+
+ 
+ .buttons {
+   position: absolute; /* Positioning the container absolutely */
+   top: 22px; /* Distance from the top */
+   right: 30px; /* Distance from the right */
+   display: flex; /* Align items horizontally */
+   align-items: center; /* Center items vertically */
+   gap: 10px; /* Space between select and button */
+   margin-right: 20px;
+
+ }
+
+ 
+ .btn {
+   background-color: white; /* Set the button's background color to white */
+   color:black; /* Inherit text color from parent */
+   /* border: 1px solid white; Optional: Border to match the select */
+   border-radius: 30px; /* Match the border radius of the select */
+   padding: 10px; /* Add padding for the button */
+   cursor: pointer; /* Change cursor to pointer on hover */
+   font-size: x-small;
+   width: 60px;
+   
+ }
+
+ .sidebar{
+   position: fixed;
+   top: 0;
+   right: 0;
+   height: 100vh;
+   width: 250px;
+   z-index: 999;
+   /* background-color: rgb(190, 190, 190); */
+   backdrop-filter: blur(1235px);
+   box-shadow: -10px 0 10px hsl(0, 2%, 29%);
+   display: none;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   color: rgb(255, 255, 255);
+   font-weight: 700;
+   font-size: 1.2rem;
+   margin-top: 30px;
+	
+ }
+
+ .sidebar > li{
+   color: rgb(255, 255, 255);
+ }
+
+ .sidebar.active {
+   display: block; /* Show the sidebar when active */
+   /* Add any additional styles for when the sidebar is visible */
+}
+ 
+
+.navv{
+   display: none;
+}
+
+/* 
+ .container {
+   background-image: 
+       linear-gradient(to left, hsla(0, 0%, 20%, 0.3), hsla(0, 0%, 50%, 0.3)), 
+       
+       url('/photos/pexels-leeloothefirst-8919569.jpg');
+   height: 120vh;
+   background-size: cover;
+   background-position: center;
+   margin-bottom: 50px;
+   padding: 20px 20px;
+} */
+
+.dv{
+   display: none;
+}
+
+.mobileIcon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 50px;
+   width: 50px;
+   color: white;
+ }
+
+ 
+
+/* Default styles */
+.navcenter,
+.buttons {
+  display: flex;
+}
+
+
+.membernav ::before{
+	content: ''; /* Create an empty pseudo-element */
+   position: absolute; /* Position it absolutely within the parent */
+   left: 0; /* Start from the left */
+   bottom: 0; /* Align with the bottom of the text */
+   width: 100%; /* Full width of the element */
+   height: 1px; /* Height of the underline */
+   background-color: white; /* Color of the underline */
+   transform: scaleX(0); /* Start with zero width */
+   transform-origin: left; /* Start the scale transformation from the left */
+   transition: transform 0.7s ease; /* Transition for scaling */
+}
+
+.membernav:hover::before {
+   transform: scaleX(1); /* Scale to full width on hover */
+}
+
+.membernav:hover {
+   border-bottom: 1px solid white; /* Add border on hover */
+}
+
+
+
+
+/* Hide elements in responsive mode */
+@media (max-width: 768px) {
+  .navcenter,
+  .buttons
+    {
+    display: none;
+  }
+
+  .logo{
+   font-size: 0.1rem;
+   text-align: left;
+   align-items: start;
+   justify-content: left;
+   margin-bottom: 10px;
+	margin-left: 0;
+	width: 150px;
+	height: 30px;
+	margin-top: 15px;
+  }
+
+  .hideinmobile{
+   display: none;
+  }
+
+  /* .sidebar{
+	margin: 0;
+	position: fixed;
+   top: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   z-index: 999;
+   background-color: rgb(0, 0, 0);
+   backdrop-filter: blur(35px);
+   box-shadow: -10px 0 10px hsl(0, 2%, 39%);
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   color: rgb(255, 255, 255);
+  } */
+
+  
+  .sidebar {
+   position: fixed;
+   top: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   z-index: 999;
+   background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+   backdrop-filter: blur(15px); /* Adjust blur value for a balanced effect */
+   box-shadow: -10px 0 10px hsl(0, 2%, 29%);
+   display: none;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   color: rgb(255, 255, 255);
+   font-weight: 700;
+   font-size: 1.2rem;
+   margin-top: 0px;
+	/* color: hsl(45, 47%, 87%); */
+}
+
+
+  .navv{
+   display: flex;
+   margin-left: auto;
+  }
+
+  .membernav{
+	font-size: 1.4rem;
+  }
+
+}
+

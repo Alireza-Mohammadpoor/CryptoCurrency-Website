@@ -1,0 +1,164 @@
+.container {
+	max-width: 100%; /* Full width on smaller screens */
+	width: 350px; /* Fixed width for larger screens */
+	height: auto;
+	margin: 0 auto;
+	padding: 20px; /* Adjust padding for better spacing */
+	border-radius: 8px;
+	box-shadow: 0 14px 40px hsla(0, 0%, 55%, 0.4);
+}
+
+.heading {
+	text-align: center;
+	font-size: 1.5rem; /* Responsive font size */
+	margin-bottom: 10px;
+	font-family: "Outfit, sans-serif";
+	font-weight: 600;
+}
+
+.description {
+	text-align: center;
+	font-size: 0.9rem;
+	margin-bottom: 15px;
+	font-family: "Arvo";
+	font-weight: 600;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.label {
+	font-size: 0.9rem; /* Adjusted for better readability */
+	margin-bottom: 6px;
+	text-align: left; /* Ensures text alignment to the left */
+	display: block; /* Ensures the label spans the full width of its container */
+	font-weight: 600; /* Makes the label stand out */
+	color: #ffffff; /* Adjust color as needed */
+}
+
+.input, .textarea {
+	padding: 12px;
+	border: 1px solid #444444;
+	border-radius: 4px;
+	font-size: 1rem;
+	color: aqua;
+	width: 100%; /* Ensure inputs are fully responsive */
+	box-sizing: border-box;
+	background-color: hsl(45, 47%, 94%);
+}
+
+.textarea {
+	height: 80px;
+}
+
+.input {
+	height: 30px;
+}
+
+.button {
+	width: 100%; /* Button spans full width on smaller screens */
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	background-color: hsl(231, 72%, 47%);
+	color: white;
+	font-size: 0.9rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	font-family: "Arvo";
+	font-weight: 700;
+	margin-top: 20px;
+}
+
+.button:hover {
+	background-color: #005bb5;
+}
+
+.alll {
+	display: flex;
+	gap: 30px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin-right: 30px;
+}
+
+.texts{
+	width: 550px;
+	text-align: left;
+}
+
+.h1{
+	font-weight: 700;
+	font-size: 1.9rem;
+}
+
+.h6{
+	font-family: 'Arvo';
+	font-size: 0.9rem;
+	font-weight: 600;
+	margin-top: 15px;
+	color: hsl(0, 0%, 70%);
+}
+
+/* Media Queries for Smaller Screens */
+@media all and (max-width: 768px) {
+
+	.h1{
+		font-weight: 600;
+		font-size: 1.3rem;
+	}
+
+	.h6{
+		font-size: 0.8rem;
+		font-weight: 600;
+
+	}
+
+	.alll {
+		 flex-direction: column; /* Stack items vertically */
+		 gap: 20px; /* Adjust gap for better spacing */
+	}
+
+	.container {
+		 width: 80%; /* Adjust width to fit smaller screens */
+	}
+
+	.heading {
+		 font-size: 1.2rem; /* Smaller heading for compact screens */
+	}
+
+	.description {
+		 font-size: 0.8rem;
+	}
+
+	
+
+	.button {
+		 font-size: 0.8rem; /* Adjust font size for buttons */
+		 padding: 8px;
+	}
+
+	.texts{
+		width: 80%;
+		text-align: left;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.container {
+		 width: 95%;
+		 padding: 15px;
+	}
+
+	.heading {
+		 font-size: 1rem;
+	}
+
+	.description {
+		 font-size: 0.75rem;
+	}
+}

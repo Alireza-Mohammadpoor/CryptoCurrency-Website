@@ -1,0 +1,40 @@
+
+
+/* Container styling */
+.postss {
+	display: flex;
+	padding-left: 30px;
+	gap: 117px;
+}
+
+/* Icon styling */
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 0px; /* Adds space between icon and text */
+	font-size: 1.2rem; /* Adjust size as needed */
+	color: inherit; /* Matches text color */
+}
+
+/* Styling for Links */
+.link {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	text-decoration: none;
+	color: inherit;
+	font-family: 'Outfit', sans-serif;
+	font-weight: 600;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+	.postss{
+		display: flex;
+		flex-direction: column;
+	}
+}
