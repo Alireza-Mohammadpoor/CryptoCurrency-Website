@@ -40,3 +40,14 @@ Ensure you have the following installed:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Alireza-Mohammadpoor/CryptoCurrency-Website.git
+
+![Screenshot 1](public/photos/screenshot.png)
+
+
+
+
+
+![Screenshot 2](public/photos/screenshot1.png)
+
+
+
