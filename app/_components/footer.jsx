@@ -77,7 +77,7 @@ function Footer() {
 										<li>Silver Eagle Coins</li>
 										<li>Ancient Roman Coins</li>
 										<li>Commemorative Coin Sets</li>
-										<li>Rare Collector's Coins</li>
+										<li>Rare Collector&apos;s Coins</li>
 										<li>Cryptocurrency Tokens</li>
 									</ul>
 								</div>

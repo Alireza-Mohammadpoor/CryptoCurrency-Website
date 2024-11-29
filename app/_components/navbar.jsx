@@ -8,8 +8,7 @@ import { useRouter, usePathname } from 'next/navigation';
 import styles from '@/styles/navbar.module.css';
 import CustomDropdown from './dropdown';
 import Link from 'next/link';
-// import Navres from './navv';
-import { display } from '@mui/system';
+
 import SwipeableTemporaryDrawer from './drawer';
 
 const NavBar = () => {

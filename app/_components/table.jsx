@@ -85,7 +85,7 @@ const CryptoTable = () => {
         <div style={{ textAlign: 'center', justifyContent: 'center', alignItems: 'center' }}>
           <h1 className={styles.h1}>Largest</h1>
           <h1 className={styles.h1}>Crypto Marketplace</h1>
-          <pre><small>Welcome to the world's largest cryptocurrency.</small></pre>
+          <pre><small>Welcome to the world&apos;s largest cryptocurrency.</small></pre>
           <pre><small>Sign up to explore more about cryptos</small></pre>
         </div>
 

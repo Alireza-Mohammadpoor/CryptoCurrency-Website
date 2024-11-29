@@ -2,7 +2,6 @@
 
 import React from 'react';
 import styles from '@/styles/news.module.css';
-import CustomizedAccordions from './accordion';
 import AccordionUsage from './accordion';
 
 const News = () => {
@@ -11,7 +10,7 @@ const News = () => {
             <div className={styles.centerAlign}>
                 <h1 className={`${styles.why}`}>WHY SUBSCRIBE?</h1>
                 <h6 className={`${styles.subtitle}`}>
-                    Unlock exclusive access to the most comprehensive crypto insights and updates directly to your inbox. By subscribing to CoinMarketCap's newsletter, you get:
+                    Unlock exclusive access to the most comprehensive crypto insights and updates directly to your inbox. By subscribing to CoinMarketCap&apos;s newsletter, you get:
                 </h6>
             </div>
             <div className={styles.alllists}>

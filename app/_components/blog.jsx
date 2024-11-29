@@ -6,9 +6,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from '@/styles/blog.module.css';
 import BlogLoadingPage from './blogLoading';
-import App from './swiper';
-import HomeLoadingPage from './homeLoading';
-import Testimonial from './testimonials';
+
 
 const BlogComponent = () => {
   const [blogPosts, setBlogPosts] = useState([]);
@@ -96,8 +94,7 @@ const BlogComponent = () => {
         )}
       </div>
 		
-      {/* <App /> */}
-      {/* <HomeLoadingPage /> */}
+      
     </div>
   );
 };
@@ -105,4 +102,3 @@ const BlogComponent = () => {
 export default BlogComponent;
 
 
-///style={{fontWeight : "700", fontSize : "1.1rem", width : "270px", marginTop : "18px",textAlign : "center", marginLeft : "20px"}}

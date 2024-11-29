@@ -68,7 +68,7 @@ const AboutUs = () => {
           </h6>
           <h6 className={styles.pp}>
             Our mission is to empower individuals and businesses to make informed decisions about
-            investing in digital currencies. Whether you're a seasoned trader or a newcomer
+            investing in digital currencies. Whether you&apos;re a seasoned trader or a newcomer
             exploring the world of blockchain, our platform offers easy-to-understand resources,
             tools, and market analysis to help you navigate the complex landscape of
             cryptocurrencies.

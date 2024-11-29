@@ -1,7 +1,7 @@
 
 
 'use client'; // Necessary if you're using hooks or state
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
 import styles from '@/styles/cryptopage.module.css';
@@ -9,53 +9,105 @@ import styles from '@/styles/cryptopage.module.css';
 // Register necessary components for Chart.js
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
+// const Crypto24HourStats = ({ cryptoId }) => {
+//   const [stats, setStats] = useState({ priceUsd: null, rank: null, marketCapUsd: null, changePercent24Hr: null });
+//   const [symbol, setSymbol] = useState(null); // State to store the symbol
+//   const [priceHistory, setPriceHistory] = useState([]);
+//   const [loading, setLoading] = useState(true);
+//   const [error, setError] = useState(null);
+
+//   // Function to fetch 24-hour stats and historical prices
+//   const getCrypto24HourStats = async () => {
+//     const url = `https://api.coincap.io/v2/assets/${cryptoId}`;
+//     const historyUrl = `https://api.coincap.io/v2/assets/${cryptoId}/history?interval=h1`;
+
+//     try {
+//       const [response, historyResponse] = await Promise.all([fetch(url), fetch(historyUrl)]);
+//       const data = await response.json();
+//       const historyData = await historyResponse.json();
+
+//       if (response.ok && historyResponse.ok) {
+//         const priceUsd = data.data.priceUsd;
+//         const rank = data.data.rank;
+//         const marketCapUsd = data.data.marketCapUsd;
+//         const changePercent24Hr = data.data.changePercent24Hr;
+//         const symbol = data.data.symbol.toLowerCase(); // Get the symbol in lowercase
+
+//         const prices = historyData.data.map(entry => ({
+//           time: new Date(entry.time).toLocaleTimeString(),
+//           price: entry.priceUsd
+//         }));
+
+//         setStats({ priceUsd, rank, marketCapUsd, changePercent24Hr });
+//         setSymbol(symbol); // Save symbol to state
+//         setPriceHistory(prices);
+//       } else {
+//         setError('Error fetching data.');
+//       }
+//     } catch (error) {
+//       setError('Error fetching data: ' + error.message);
+//     } finally {
+//       setLoading(false);
+//     }
+//   };
+
+//   useEffect(() => {
+//     if (cryptoId) {
+//       getCrypto24HourStats();
+//     }
+//   }, [cryptoId]);
+
+
 const Crypto24HourStats = ({ cryptoId }) => {
-  const [stats, setStats] = useState({ priceUsd: null, rank: null, marketCapUsd: null, changePercent24Hr: null });
-  const [symbol, setSymbol] = useState(null); // State to store the symbol
-  const [priceHistory, setPriceHistory] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  // Function to fetch 24-hour stats and historical prices
-  const getCrypto24HourStats = async () => {
-    const url = `https://api.coincap.io/v2/assets/${cryptoId}`;
-    const historyUrl = `https://api.coincap.io/v2/assets/${cryptoId}/history?interval=h1`;
-
-    try {
-      const [response, historyResponse] = await Promise.all([fetch(url), fetch(historyUrl)]);
-      const data = await response.json();
-      const historyData = await historyResponse.json();
-
-      if (response.ok && historyResponse.ok) {
-        const priceUsd = data.data.priceUsd;
-        const rank = data.data.rank;
-        const marketCapUsd = data.data.marketCapUsd;
-        const changePercent24Hr = data.data.changePercent24Hr;
-        const symbol = data.data.symbol.toLowerCase(); // Get the symbol in lowercase
-
-        const prices = historyData.data.map(entry => ({
-          time: new Date(entry.time).toLocaleTimeString(),
-          price: entry.priceUsd
-        }));
-
-        setStats({ priceUsd, rank, marketCapUsd, changePercent24Hr });
-        setSymbol(symbol); // Save symbol to state
-        setPriceHistory(prices);
-      } else {
-        setError('Error fetching data.');
-      }
-    } catch (error) {
-      setError('Error fetching data: ' + error.message);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    if (cryptoId) {
-      getCrypto24HourStats();
-    }
-  }, [cryptoId]);
+	const [stats, setStats] = useState({ priceUsd: null, rank: null, marketCapUsd: null, changePercent24Hr: null });
+	const [symbol, setSymbol] = useState(null);
+	const [priceHistory, setPriceHistory] = useState([]);
+	const [loading, setLoading] = useState(true);
+	const [error, setError] = useState(null);
+ 
+	// Memoize the function to avoid re-creation on every render
+	const getCrypto24HourStats = useCallback(async () => {
+	  const url = `https://api.coincap.io/v2/assets/${cryptoId}`;
+	  const historyUrl = `https://api.coincap.io/v2/assets/${cryptoId}/history?interval=h1`;
+ 
+	  try {
+		 const [response, historyResponse] = await Promise.all([fetch(url), fetch(historyUrl)]);
+		 const data = await response.json();
+		 const historyData = await historyResponse.json();
+ 
+		 if (response.ok && historyResponse.ok) {
+			const priceUsd = data.data.priceUsd;
+			const rank = data.data.rank;
+			const marketCapUsd = data.data.marketCapUsd;
+			const changePercent24Hr = data.data.changePercent24Hr;
+			const symbol = data.data.symbol.toLowerCase();
+ 
+			const prices = historyData.data.map(entry => ({
+			  time: new Date(entry.time).toLocaleTimeString(),
+			  price: entry.priceUsd,
+			}));
+ 
+			setStats({ priceUsd, rank, marketCapUsd, changePercent24Hr });
+			setSymbol(symbol);
+			setPriceHistory(prices);
+		 } else {
+			setError('Error fetching data.');
+		 }
+	  } catch (error) {
+		 setError('Error fetching data: ' + error.message);
+	  } finally {
+		 setLoading(false);
+	  }
+	}, [cryptoId]); // Include cryptoId in dependencies as it changes
+ 
+	useEffect(() => {
+	  if (cryptoId) {
+		 getCrypto24HourStats();
+	  }
+	}, [cryptoId, getCrypto24HourStats]); // Include memoized function
+ 
+	// Rest of the component...
+ 
 
   const chartData = {
     labels: priceHistory.map(p => p.time),

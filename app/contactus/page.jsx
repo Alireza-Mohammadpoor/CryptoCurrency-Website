@@ -15,7 +15,7 @@ const Contact = () => {
             <div className={styles.texts}>
                 <h1 className={styles.h1}>
                     Get in Touch with Us<br />
-                    We're Here to Help!
+                    We&apos;re Here to Help!
                 </h1>
                 <h6 className={styles.h6}>
                     At our Cryptocurrency Website, we value your feedback and are committed to providing exceptional support to our users. Whether you have questions about our services, need assistance with transactions, or want to share your thoughts on how we can improve, our dedicated team is ready to assist you. You can reach us through our contact form available on the website, or feel free to send us an email at <b style={{ color: "hsl(212, 100%, 68%)", fontWeight: "800" }}>support@yourcryptocurrencywebsite.com</b>. We aim to respond to all inquiries within 24 hours, ensuring that you receive timely and helpful information. Additionally, for real-time assistance, you can connect with us via our live chat feature during business hours. Your experience is important to us, and we look forward to hearing from you!
@@ -50,3 +50,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+// crypto-project/public/photos/screenshot (2).png
