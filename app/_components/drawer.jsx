@@ -69,38 +69,46 @@ export default function SwipeableTemporaryDrawer() {
           </ListItemButton>
         </ListItem>
 		  <hr />
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon sx={{ color: "white" }}>
-				<FontAwesomeIcon icon={faStar} />
-            </ListItemIcon>
-            <ListItemText primary="Features" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon sx={{ color: "white" }}>
-				<FontAwesomeIcon icon={faGraduationCap} />
-            </ListItemIcon>
-            <ListItemText primary="Courses" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon sx={{ color: "white" }}>
-				<FontAwesomeIcon icon={faFeatherPointed} />
-            </ListItemIcon>
-            <ListItemText primary="Our Blog" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon sx={{ color: "white" }}>
-				<FontAwesomeIcon icon={faPhone} />
-            </ListItemIcon>
-            <ListItemText primary="Contact us" />
-          </ListItemButton>
-        </ListItem>
+		  <Link href='/features'>
+			<ListItem disablePadding>
+				<ListItemButton>
+					<ListItemIcon sx={{ color: "white" }}>
+					<FontAwesomeIcon icon={faStar} />
+					</ListItemIcon>
+					<ListItemText primary="Features" />
+				</ListItemButton>
+			</ListItem>
+		  </Link>
+		  <Link href='/courses'>
+			<ListItem disablePadding>
+				<ListItemButton>
+					<ListItemIcon sx={{ color: "white" }}>
+					<FontAwesomeIcon icon={faGraduationCap} />
+					</ListItemIcon>
+					<ListItemText primary="Courses" />
+				</ListItemButton>
+			</ListItem>
+		  </Link>
+		  <Link href='blog'>
+			<ListItem disablePadding>
+				<ListItemButton>
+					<ListItemIcon sx={{ color: "white" }}>
+					<FontAwesomeIcon icon={faFeatherPointed} />
+					</ListItemIcon>
+					<ListItemText primary="Our Blog" />
+				</ListItemButton>
+			</ListItem>
+		  </Link>
+		  <Link href='/contactus'>
+			<ListItem disablePadding>
+				<ListItemButton>
+					<ListItemIcon sx={{ color: "white" }}>
+					<FontAwesomeIcon icon={faPhone} />
+					</ListItemIcon>
+					<ListItemText primary="Contact us" />
+				</ListItemButton>
+			</ListItem>
+		  </Link>
 		  <ListItem disablePadding>
 			<ListItemButton>
 				<div
